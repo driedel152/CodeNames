@@ -19,7 +19,7 @@ public class BoardDisplay extends JFrame {
 	/**
 	 * The size of one side of a single box of the key (they're squares).
 	 */
-	static final int KEY_SIZE = 25;
+	static final int KEY_SIZE = 150;
 
 	public BoardDisplay(Board board, Player p1, Player p2) {
 		this.board = board;

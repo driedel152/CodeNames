@@ -56,8 +56,10 @@ public class Main {
 			Color[] column = key[x];
 			for(int y=0; y<column.length; y++) {
 				g.setColor(key[x][y]);
-				g.fillRect(x*BoardDisplay.KEY_SIZE, y*BoardDisplay.KEY_SIZE, 
-						BoardDisplay.KEY_SIZE, BoardDisplay.KEY_SIZE);
+				g.fillRect(x*BoardDisplay.CARD_WIDTH, y*BoardDisplay.CARD_HEIGHT, 
+						BoardDisplay.CARD_WIDTH, BoardDisplay.CARD_HEIGHT);
+				g.setColor(Color.BLACK);
+				g.drawString(board.getWords()[x][y], x*BoardDisplay.CARD_WIDTH+BoardDisplay.CARD_WIDTH/2, y*BoardDisplay.CARD_HEIGHT+BoardDisplay.CARD_HEIGHT/2);
 			}
 		}
 		
